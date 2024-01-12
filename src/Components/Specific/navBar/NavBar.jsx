@@ -64,6 +64,7 @@ const NavBar = () => {
         open={open}
         onClose={() => setOpen(false)}
         onOpen={() => setOpen(true)}
+        sx={{ overflowY: 'hidden' }}
       >
         <Box sx={{ backgroundColor: '#08040C', minHeight: '100vh', padding: '20px', overflow: 'hidden', flexDirection: 'column', justifyContent: 'space-between' }} display="flex" >
           <Box display="flex" justifyContent="center" alignItems="center">
