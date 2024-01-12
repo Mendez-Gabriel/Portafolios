@@ -8,7 +8,7 @@ const Section2 = () => {
     return (
         <div className={background} id='Section2'>
             <Box display='flex' flexDirection='column' alignItems='center' my={8}>
-                <Typography color='black' variant='h4' fontWeight='1000' textAlign='center' mt={8}>Know me more</Typography>
+                <Typography color='black' variant='h4' fontWeight='1000' textAlign='center' mt={8}>About Me</Typography>
                 <div className={border} ></div>
             </Box>
             <Box display='flex' flexWrap='wrap' justifyContent='center'>

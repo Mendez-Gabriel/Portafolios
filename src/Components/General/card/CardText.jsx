@@ -16,7 +16,7 @@ const CardText = () => {
                     Rolling Code HighSchool
                 </Typography>
                 <Typography color="text.secondary" fontSize={15}>
-                    Graduado con distinción de RollingCode. Mi enfoque principal reside en la creación de experiencias web fluidas y funcionales utilizando tecnologías como HTML5, CSS, JavaScript, Mongoose, React, Express y Node.js.
+                    Graduated with distinction from RollingCode. My main focus lies in creating fluid and functional web experiences using technologies such as HTML5, CSS, JavaScript, Mongoose, React, Express and Node.js.
                 </Typography>
             </CardContent>
             <CardActions>

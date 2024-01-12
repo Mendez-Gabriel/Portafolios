@@ -23,7 +23,7 @@ const CardImg = ({ img, title, text, pagNetlify, pagGitHub }) => {
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
-                        Descripción
+                        Description
                     </AccordionSummary>
                     <AccordionDetails>
                         {text}

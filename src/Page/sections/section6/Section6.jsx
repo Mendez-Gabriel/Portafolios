@@ -9,7 +9,7 @@ const Section6 = () => {
   return (
     <div className={background} id='Section6'>
         <Box mx={2} py={8}>
-            <Typography color='black' variant='h4' fontWeight='1000' textAlign='center'>Contacto</Typography>
+            <Typography color='black' variant='h4' fontWeight='1000' textAlign='center'>Contact</Typography>
             <div className={border}></div>
             {/* <Box>
               <Form />
@@ -24,7 +24,7 @@ const Section6 = () => {
               <Typography>mendez.gabriel.d@hotmail.com</Typography>
             </Box>
             <Box m={2}>
-              <Typography variant='h6' fontWeight='800'>Sigueme</Typography>
+              <Typography variant='h6' fontWeight='800'>Follow me</Typography>
               <Button href='https://github.com/Mendez-Gabriel' sx={{color:'black'}}><GitHubIcon/></Button>                
               <Button href='https://www.linkedin.com/in/gabriel-mendez-976370236/'><LinkedInIcon/></Button>
             </Box>
