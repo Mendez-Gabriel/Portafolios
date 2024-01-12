@@ -29,7 +29,7 @@ const NavBar2 = () => {
 
   return (
         <Box  sx={{ backgroundColor: '#08040C', minHeight: '100vh', padding: '20px', flexDirection: 'column', justifyContent: 'space-between', display: {xs:'none', md:'block flex'}}}  position='fixed' >
-          <Box display="flex" justifyContent="center" alignItems="center">
+          <Box display="flex" justifyContent="center" alignItems="center" position='fixed'>
             <Avatar src={icon} sx={{ width: '150px', height:'150px', marginTop: '30px', border:'10px solid grey'}}/>
           </Box>
           <Typography variant="h6" component="div" textAlign='center' color='white'>
