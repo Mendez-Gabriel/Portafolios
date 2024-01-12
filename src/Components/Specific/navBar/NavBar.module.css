@@ -1,0 +1,19 @@
+
+.image{
+    clip-path: circle(40%);
+    width: 3pc;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.image2{
+    clip-path: circle(40%);
+    width: 10pc;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.bg{
+    background-color: #434A58;
+}

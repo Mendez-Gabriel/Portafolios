@@ -1,0 +1,14 @@
+.color{
+    color: black;
+}
+
+.background{
+    background-color: white;
+}
+
+.border{
+    border-top: 3px solid blue;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,8 @@
+.backgroundBox{
+    background-color: rgb(241, 241, 155);
+    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+    padding-inline: 10px;
+    color: black;
+    text-align: center;
+}
