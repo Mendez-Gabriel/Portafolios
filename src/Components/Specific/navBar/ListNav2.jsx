@@ -1,5 +1,7 @@
 import React from 'react';
 import { List, Box, ListItem, ListItemText, ListItemButton, ListItemIcon, Button, Typography } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const ListNav2 = ({ icons, handleItemClick, nameIcon }) => {
     return (
@@ -31,18 +33,27 @@ const ListNav2 = ({ icons, handleItemClick, nameIcon }) => {
                 :
                 (
                     <Box display="flex" justifyContent="center" >
-                        {icons.map((icon, index) => (
-                            <Button
-                                key={index}
-                                onClick={() => {
-                                    handleItemClick(`Section${index + 1}`);
-                                }}
-                            >
-                                <Box color={'white'}>
-                                    {React.createElement(icons[index])}
-                                </Box>
-                            </Button>
-                        ))}
+                        <Button
+                            onClick={() => {
+                                handleItemClick(`Section${index + 1}`);
+                            }}
+                            href='https://github.com/Mendez-Gabriel'
+                        >
+                            <Box color={'white'}>
+                                <GitHubIcon />
+                            </Box>
+                        </Button>
+                        <Button
+                            onClick={() => {
+                                handleItemClick(`Section${index + 1}`);
+                            }}
+                            href='https://www.linkedin.com/in/gabriel-mendez-976370236/'
+                        >
+                            <Box color={'white'}>
+                                <LinkedInIcon />
+                            </Box>
+                        </Button>
+                        
                     </Box>
                 )
             }
