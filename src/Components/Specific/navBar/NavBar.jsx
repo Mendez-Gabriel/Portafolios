@@ -66,7 +66,7 @@ const NavBar = () => {
         onOpen={() => setOpen(true)}
         sx={{ overflowY: 'hidden' }}
       >
-        <Box sx={{ backgroundColor: '#08040C', minHeight: '100vh', padding: '20px', overflow: 'hidden', flexDirection: 'column', justifyContent: 'space-between' }} display="flex" >
+        <Box sx={{ backgroundColor: '#08040C', minHeight: '100vh', padding: '20px', overflow: 'hidden', flexDirection: 'column', justifyContent: 'space-between', overflowY: 'hidden'  }} display="flex" >
           <Box display="flex" justifyContent="center" alignItems="center">
             <Avatar src={icon} sx={{ width: '150px', height: '150px', marginTop: '30px', border: '10px solid grey' }} />
           </Box>
