@@ -16,7 +16,7 @@ const Section6 = () => {
             </Box> */}
             <Box m={2}>
               <Typography variant='h6' fontWeight='800'>Address</Typography>
-              <Typography>Pasaje Miguel de Unamuno 2119, San Miguel de Tucumán, Tucumán, Argentina</Typography>
+              <Typography>San Miguel de Tucumán, Tucumán, Argentina</Typography>
             </Box>
             <Box m={2}>
               <Typography variant='h6' fontWeight='800'>Communicate</Typography>
