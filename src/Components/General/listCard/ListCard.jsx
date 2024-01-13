@@ -27,14 +27,14 @@ const ListCard = () => {
           img={LaEsquinaDelSandwitch}
           title={'La Esquina del Sandwich'}
           text={'Sandwich Corner, our first group project, was developed exclusively with HTML and CSS. Highlighting the popular sandwich shops of Tucumán along with their products, this experience marked our beginning in collaborative web creation with a pure focus on design and style.'}
-          pagNetlify={'https://main--willowy-duckanoo-21117a.netlify.app/'}
+          pagNetlify={'https://main--laesquinadelsandwich.netlify.app/'}
           pagGitHub={'https://github.com/Mendez-Gabriel/Project-One-RC'}
         />
         <CardImg 
           img={GameVerse}
           title={'GameVerse'}
           text={'GameVerse, our second group project, stands out as a comprehensive gaming platform with viewing, purchasing options, and an authentication system that includes registration and login functions for users. In addition, an exclusive administrative interface is incorporated for the administrator user, allowing them to efficiently manage the addition, editing and deletion of games on the page.'}
-          pagNetlify={'https://65a1875f389b9c2cde9b5696--unrivaled-kringle-476204.netlify.app/'}
+          pagNetlify={'https://65a1875f389b9c2cde9b5696--game-verse-gamecode.netlify.app/'}
           pagGitHub={'https://github.com/Bel98/Proyecto2-grupo3'}
         />
     </Box>
