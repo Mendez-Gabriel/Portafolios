@@ -26,7 +26,7 @@ const Section6 = () => {
             <Box m={2}>
               <Typography variant='h6' fontWeight='800'>Follow me</Typography>
               <Button href='https://github.com/Mendez-Gabriel' sx={{color:'black'}}><GitHubIcon/></Button>                
-              <Button href='www.linkedin.com/in/gabriel-mendez-dario/'><LinkedInIcon/></Button>
+              <Button href='https://www.linkedin.com/in/gabriel-mendez-dario/'><LinkedInIcon/></Button>
             </Box>
 
         </Box>
