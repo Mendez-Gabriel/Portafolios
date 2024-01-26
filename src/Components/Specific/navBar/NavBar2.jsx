@@ -17,7 +17,7 @@ const NavBar2 = () => {
 
     const icons = [HomeIcon, PersonIcon, CodeIcon, DocumentScannerIcon, IntegrationInstructionsIcon, MailIcon];
     const iconsRed = [GitHubIcon, LinkedInIcon];
-    const nameIcon = ['Home', 'About Me', 'What I Do', 'Resume', 'Portfolio', 'Contact'];
+    const nameIcon = ['Home', 'About Me', 'What I Do', 'My Education', 'Portfolio', 'Contact'];
 
     const handleItemClick = (index) => {
       const section = document.getElementById(index);
