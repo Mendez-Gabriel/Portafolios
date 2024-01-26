@@ -47,7 +47,7 @@ const ListNav2 = ({ icons, handleItemClick, nameIcon }) => {
                             onClick={() => {
                                 handleItemClick(`Section${index + 1}`);
                             }}
-                            href='https://www.linkedin.com/in/gabriel-mendez-976370236/'
+                            href='www.linkedin.com/in/gabriel-mendez-dario/'
                         >
                             <Box color={'white'}>
                                 <LinkedInIcon />

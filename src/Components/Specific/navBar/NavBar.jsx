@@ -82,7 +82,7 @@ const NavBar = () => {
             <Button href='https://github.com/Mendez-Gabriel'>
               <GitHubIcon sx={{color:'white'}}/>
             </Button>
-            <Button href='https://www.linkedin.com/in/gabriel-mendez-976370236/'>
+            <Button href='www.linkedin.com/in/gabriel-mendez-dario/'>
               <LinkedInIcon  sx={{color:'white'}}/>
             </Button>
           </Box>
