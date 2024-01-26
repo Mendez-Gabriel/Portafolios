@@ -8,6 +8,7 @@
     min-height: 100vh;
 }
 
+
 @media (min-width: 900px) {
     .padding{
         padding-left: 15rem;

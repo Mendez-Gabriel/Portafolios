@@ -9,3 +9,16 @@
     display: flex;
     justify-content: center;
 }
+
+
+.container {
+    /* Estilo predeterminado para .container */
+    margin-left: 100px; /* O el valor que desees inicialmente */
+}
+
+@media (max-width: 1200px) {
+    .container{
+        margin-left: 10px;     
+    }
+    
+}

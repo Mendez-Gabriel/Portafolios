@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card, CardContent, Typography, CardActions, Button, Box } from '@mui/material';
-import { backgroundBox } from './Cards.module.css';
+import { backgroundBox, card } from './Cards.module.css';
 
 const CardText = () => {
     return (
-        <Card>
+        <Card className={card}>
             <CardContent>
                 <Typography className={backgroundBox} mb={2}>
                     2023
@@ -20,7 +20,7 @@ const CardText = () => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small" href='https://web.rollingcodeschool.com/'>Know more</Button>
+                <Button size="small" href='https://web.rollingcodeschool.com/'>More about</Button>
             </CardActions>
         </Card>
     )
