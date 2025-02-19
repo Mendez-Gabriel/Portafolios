@@ -1,6 +1,5 @@
 import React from 'react';
 import { SwipeableDrawer, Typography, Box, Avatar } from '@mui/material';
-import ListNav from './ListNav';
 import icon from '../../../assets/Perfil.jpg';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
@@ -30,7 +29,12 @@ const NavBar2 = () => {
   return (
         <Box  sx={{ backgroundColor: '#08040C', minHeight: '100vh', padding: '20px', flexDirection: 'column', justifyContent: 'space-between', display: {xs:'none', md:'block flex'}}}  position='fixed' >
           <Box display="flex" justifyContent="center" alignItems="center">
-            <Avatar src={icon} sx={{ width: '150px', height:'150px', marginTop: '30px', border:'10px solid grey'}}/>
+            <Avatar src={icon} sx={{ 
+              width: '150px', 
+              height: '150px', 
+              marginTop: '30px', 
+              boxShadow: '0px 0px 10px 5px grey' 
+            }}/>
           </Box>
           <Typography variant="h6" component="div" textAlign='center' color='white'>
             Gabriel Dario Mendez

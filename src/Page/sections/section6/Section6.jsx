@@ -20,7 +20,7 @@ const Section6 = () => {
             </Box>
             <Box m={2}>
               <Typography variant='h6' fontWeight='800'>Communicate</Typography>
-              <Typography>1157641372</Typography>
+              <Typography>3813959997</Typography>
               <Typography>mendez.gabriel.d@hotmail.com</Typography>
             </Box>
             <Box m={2}>

@@ -1,44 +1,59 @@
-import React from 'react';
-import CardImg from '../card/CardImg';
-import GoalKeepImgage from '../../../assets/portfolios/GoalKeep.png';
-import TrendyThreads from '../../../assets/portfolios/TrendyThreads.png';
-import LaEsquinaDelSandwitch from '../../../assets/portfolios/LaEsquinaDelSandwitch.png';
-import GameVerse from '../../../assets/portfolios/GameVerse.png';
-import { Box } from '@mui/material';
+import CardImg from "../card/CardImg";
+import GoalKeepImgage from "../../../assets/portfolios/GoalKeep.png";
+import TrendyThreads from "../../../assets/portfolios/TrendyThreads.png";
+import LaEsquinaDelSandwitch from "../../../assets/portfolios/LaEsquinaDelSandwitch.png";
+import Guisky from "../../../assets/portfolios/Guisky.png";
+import GameVerse from "../../../assets/portfolios/GameVerse.png";
+import { Box } from "@mui/material";
+import { Buttons, Text } from './ListCard.data';
 
 const ListCard = () => {
   return (
-    <Box display='flex' flexWrap='wrap' justifyContent='center'>
-        <CardImg 
-          img={GoalKeepImgage}
-          title={'GoalKeep Organizer'}
-          text={'GoalKeep allows users to reserve soccer fields and purchase products. Administrators have the power to manage courts, products and block users. The platform offers a comprehensive experience for the efficient management and use of the services offered.'} 
-          pagNetlify={'https://goalkeeporganizer.netlify.app/'}
-          pagGitHub={'https://github.com/Mendez-Gabriel/GoalKeepOrganizer-Frontend'}
-        />
-        <CardImg 
-          img={TrendyThreads}
-          title={'Trendy Threads'}
-          text={'Trendy Threads represents my first project in React, highlighting the visual display of a fashion boutique`s collection. This significant experience marked my beginnings in web development with React, consolidating my fundamental knowledge in technology.'}
-          pagNetlify={'https://main--trendythreads.netlify.app/'}
-          pagGitHub={'https://github.com/Mendez-Gabriel/TrabajoGrupalReact'}
-        />
-        <CardImg 
-          img={LaEsquinaDelSandwitch}
-          title={'La Esquina del Sandwich'}
-          text={'Sandwich Corner, our first group project, was developed exclusively with HTML and CSS. Highlighting the popular sandwich shops of Tucumán along with their products, this experience marked our beginning in collaborative web creation with a pure focus on design and style.'}
-          pagNetlify={'https://main--laesquinadelsandwich.netlify.app/'}
-          pagGitHub={'https://github.com/Mendez-Gabriel/Project-One-RC'}
-        />
-        <CardImg 
-          img={GameVerse}
-          title={'GameVerse'}
-          text={'GameVerse, our second group project, stands out as a comprehensive gaming platform with viewing, purchasing options, and an authentication system that includes registration and login functions for users. In addition, an exclusive administrative interface is incorporated for the administrator user, allowing them to efficiently manage the addition, editing and deletion of games on the page.'}
-          pagNetlify={'https://65a1875f389b9c2cde9b5696--game-verse-gamecode.netlify.app/'}
-          pagGitHub={'https://github.com/Bel98/Proyecto2-grupo3'}
-        />
+    <Box display="flex" flexWrap="wrap" justifyContent="center">
+      <CardImg
+        img={Guisky}
+        title={Text.GuiskyText.title}
+        text={
+          <>
+            {Text.GuiskyText.text1}
+            <br />
+            <br />
+            {Text.GuiskyText.text2}
+          </>
+        }
+        urlPage={Text.GuiskyText.url}
+        arrayOfButtons={Buttons.FestBookData}
+      />
+      <CardImg
+        img={GoalKeepImgage}
+        title={Text.GoalKeepText.title}
+        text={Text.GoalKeepText.text}
+        arrayOfButtons={Buttons.GoalKeepData}
+        urlPage={Text.GoalKeepText.url}
+      />
+      <CardImg
+        img={TrendyThreads}
+        title={Text.TrendyThreadsText.title}
+        text={Text.TrendyThreadsText.text}
+        arrayOfButtons={Buttons.TrendyThreadsData}
+        urlPage={Text.TrendyThreadsText.url}
+      />
+      <CardImg
+        img={LaEsquinaDelSandwitch}
+        title={Text.LaEsquinaDelSandwitchText.title}
+        text={Text.LaEsquinaDelSandwitchText.text}
+        arrayOfButtons={Buttons.LaEsquinaDelSandwitchData}
+        urlPage={Text.LaEsquinaDelSandwitchText.url}
+      />
+      <CardImg
+        img={GameVerse}
+        title={Text.GameVerseText.title}
+        text={Text.GameVerseText.text}
+        arrayOfButtons={Buttons.GameVerseData}
+        urlPage={Text.GameVerseText.url}
+      />
     </Box>
-  )
-}
+  );
+};
 
 export default ListCard;

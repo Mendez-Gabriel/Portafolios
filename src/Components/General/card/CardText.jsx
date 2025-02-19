@@ -1,29 +1,46 @@
-import React from 'react';
-import { Card, CardContent, Typography, CardActions, Button, Box } from '@mui/material';
-import { backgroundBox, card } from './Cards.module.css';
+import React from "react";
+import {
+  Card,
+  CardContent,
+  Typography,
+  CardActions,
+  Button,
+} from "@mui/material";
+import { backgroundBox, card } from "./Cards.module.css";
+import PropTypes from 'prop-types';
 
-const CardText = () => {
-    return (
-        <Card className={card}>
-            <CardContent>
-                <Typography className={backgroundBox} mb={2}>
-                    2023
-                </Typography>
-                <Typography variant="h5" component="div">
-                    Full Stack Developer
-                </Typography>
-                <Typography color="text.secondary" my={2}>
-                    Rolling Code HighSchool
-                </Typography>
-                <Typography color="text.secondary" fontSize={15}>
-                    Graduated with distinction from RollingCode. My main focus lies in creating fluid and functional web experiences using technologies such as HTML5, CSS, JavaScript, Mongoose, React, Express and Node.js.
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small" href='https://web.rollingcodeschool.com/'>More about</Button>
-            </CardActions>
+const CardText = ({ arrayOfCards }) => {
+  return (
+    <>
+      {arrayOfCards.map((array) => (
+        <Card className={card} key={array.id}>
+          <CardContent>
+            <Typography className={backgroundBox} mb={2}>
+              {array.year}
+            </Typography>
+            <Typography variant="h5" component="div">
+              {array.title}
+            </Typography>
+            <Typography color="text.secondary" my={2}>
+              {array.subTitle}
+            </Typography>
+            <Typography color="text.secondary" fontSize={15}>
+              {array.text}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small" target="_blank" rel="noopener noreferrer" href={array.url}>
+              {array.btn}
+            </Button>
+          </CardActions>
         </Card>
-    )
+      ))}
+    </>
+  );
+};
+
+CardText.propTypes = {
+    arrayOfCards: PropTypes.array
 }
 
 export default CardText;

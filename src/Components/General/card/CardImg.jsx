@@ -1,18 +1,20 @@
-import React from 'react';
-import { Card, CardActions, CardContent, CardMedia, Button, Typography, Accordion, AccordionSummary, AccordionDetails, Box } from '@mui/material';
+import { CardActions, CardContent, CardMedia, Button, Typography, Accordion, AccordionSummary, AccordionDetails, Box } from '@mui/material';
 import { image, card } from './CardImg.module.css';
 import { ExpandMore } from '@mui/icons-material';
+import Buttons from '../buttons/Buttons';
+import PropTypes from 'prop-types';
 
-
-const CardImg = ({ img, title, text, pagNetlify, pagGitHub }) => {
+const CardImg = ({ img, title, text, urlPage, arrayOfButtons }) => {
     return (
         <Box className={card}>
-            <CardMedia
-                component="img"
-                alt="green iguana"
-                className={image}
-                image={img}
-            />
+            <Button href={urlPage} target="_blank" rel="noopener noreferrer">
+                <CardMedia
+                    component="img"
+                    alt="green iguana"
+                    className={image}
+                    image={img}
+                />
+            </Button>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                     {title}
@@ -30,14 +32,21 @@ const CardImg = ({ img, title, text, pagNetlify, pagGitHub }) => {
                     </AccordionDetails>
                 </Accordion>
                 <Box my={2}>
-                    <Button size="small" href={pagNetlify}>Netlify</Button>
-                    <Button size="small" href={pagGitHub}>GitHub</Button>
+                    <Buttons arrayOfButtons={arrayOfButtons} />
                 </Box>
             </CardContent>
             <CardActions>
             </CardActions>
         </Box>
     )
+}
+
+CardImg.propTypes = {
+    img: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string,
+    arrayOfButtons: PropTypes.array,
+    urlPage: PropTypes.string
 }
 
 export default CardImg;

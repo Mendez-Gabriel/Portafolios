@@ -30,7 +30,7 @@ const Section2 = () => {
                 <Box mx={2}>
                     <ItemForm title={'Name'} description={'Gabriel Dario Mendez'}/>
                     <ItemForm title={'Email'} description={'mendez.gabriel.d@hotmail.com'}/>
-                    <ItemForm title={'Age'} description={'29'}/>
+                    <ItemForm title={'Age'} description={'30'}/>
                     <ItemForm title={'From'} description={'Tucumán, Argentina'}/>
                     {/* <Button component="label" variant="contained" href="https://drive.google.com/file/d/1YWRGsiL5gI17m835dwDRjJ2helcAS83d/view?usp=drive_link" startIcon={<CloudDownloadIcon />} >
                         Download my cv
